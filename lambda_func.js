@@ -20,7 +20,7 @@ export const handler = async (event) => {
     }
 
     const params = {
-        TopicArn: "arn:aws:sns:us-east-1:401509029532:notifications-topic",
+        TopicArn: "arn:aws:sns:us-east-1:your_aws_id:notifications-topic",
         Message: message
     };
 
@@ -28,3 +28,4 @@ export const handler = async (event) => {
 
     return { statusCode: 200, body: "Notification Sent ✅" };
 };
+
