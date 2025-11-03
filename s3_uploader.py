@@ -1,4 +1,4 @@
-"""import boto3
+import boto3
 import os
 import sys
 from datetime import datetime
@@ -34,5 +34,5 @@ if __name__ == "__main__":
     flag = sys.argv[2].lower() == "safe"
 
     result = upload_image(local_path, flag)
-    print(result)  """
-print("skipping for now -- ")
+    print(result)  
+
