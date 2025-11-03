@@ -17,7 +17,7 @@ Post ID: ${eventBody.postId}
         `;
 
         const params = {
-            TopicArn: "arn:aws:sns:us-east-1:401509029532:notifications-topic",
+            TopicArn: "arn:aws:sns:us-east-1:your_aws_id:notifications-topic",
             Subject: "New Notification",
             Message: message
         };
@@ -34,4 +34,5 @@ Post ID: ${eventBody.postId}
         throw err;
     }
 }
+
 
