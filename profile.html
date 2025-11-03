@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Socialify</title>
+  <link rel="stylesheet" href="profile_style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Socialify</h1>
+    <button id="backToFeed" class="back-btn">← Feed</button>
+  </header>
+
+  <main class="profile-container">
+    <section class="profile-header">
+      <div class="profile-photo-container">
+        <img id="profilePhoto" src="pfp.webp" alt="Profile Photo" class="profile-photo">
+        <input type="file" id="uploadPhoto" accept="image/*" hidden>
+        <button id="editPhotoBtn" class="edit-photo-btn">📷</button>
+      </div>
+
+      <div class="profile-info">
+        <h2 id="username">GREAT_BRAHMIN</h2>
+        <p id="bio">Hey there 👋 I love coding, coffee, and good vibes.</p>
+        <button id="editBioBtn" class="edit-bio-btn">Edit Bio ✏️</button>
+
+        <div class="stats">
+          <div><span id="postsCount">0</span><p>Posts</p></div>
+          <div><span id="followersCount">120</span><p>Followers</p></div>
+          <div><span id="followingCount">180</span><p>Following</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="posts-section">
+      <h3>Your Posts</h3>
+      <div id="postsGrid" class="posts-grid"></div>
+    </section>
+  </main>
+
+  <script src="profile_script.js"></script>
+</body>
+</html>

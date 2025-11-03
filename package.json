@@ -1,0 +1,26 @@
+{
+  "name": "socialify",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Social media platform with content moderation",
+  "main": "ocr-server.js",
+  "scripts": {
+    "start": "node ocr-server.js",
+    "dev": "node --watch ocr-server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.922.0",
+    "@xenova/transformers": "^2.5.0",
+    "aws-sdk": "^2.1692.0",
+    "canvas": "^3.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jpeg-js": "^0.4.4",
+    "multer": "^2.0.2",
+    "sharp": "^0.34.4",
+    "tesseract.js": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

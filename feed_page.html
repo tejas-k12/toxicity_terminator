@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed - Socialify</title>
+  <link rel="stylesheet" href="feed_style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Socialify</h1>
+    <div class="nav-right">
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+      <button id="ProfileBtn" class="profile-btn">Profile</button>
+    </div>
+  </header>
+
+  <main class="feed-container">
+    <section id="postFormSection" class="create-post-card">
+      <textarea id="postText" placeholder="What's on your mind?"></textarea>
+      <input type="file" id="postImage" accept="image/*">
+      <button id="postBtn" class="post-btn">Post</button>
+    </section>
+
+    <section id="feed" class="feed"></section>
+  </main>
+
+  <script src="feed_script.js"></script>
+</body>
+</html>

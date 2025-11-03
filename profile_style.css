@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #071018;
+  --card: #0e1620;
+  --accent: #7c5cff;
+  --accent-2: #00d4ff;
+  --muted: #94a3b8;
+  --radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: white;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: rgba(14,22,32,0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.back-btn {
+  background: var(--accent);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 15px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.back-btn:hover { background: var(--accent-2); }
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  margin-bottom: 30px;
+}
+
+.profile-photo-container {
+  position: relative;
+}
+
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+}
+
+.edit-photo-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--accent);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+.edit-photo-btn:hover { background: var(--accent-2); }
+
+.profile-info h2 {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.profile-info p {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.edit-bio-btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 10px;
+  padding: 5px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.edit-bio-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+.stats div {
+  text-align: center;
+}
+.stats span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.posts-section {
+  max-width: 700px;
+  width: 100%;
+}
+
+.posts-section h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--accent-2);
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.post-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post-info {
+  padding: 10px;
+}
+
+.post-info p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+}
+
+.action-btn {
+  cursor: pointer;
+  color: var(--muted);
+  transition: 0.2s;
+}
+.action-btn:hover {
+  color: var(--accent-2);
+}
